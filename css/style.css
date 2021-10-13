@@ -1,6 +1,7 @@
 :root {
     --black: #222222;
     --light-pink: #F1E4E6;
+    --pink : #F16D7F;
 }
 
 .page {
@@ -61,6 +62,9 @@
     display: flex;
 }
 
+.brand__img {
+    }
+
 .brand__wrp {
     background-color: var(--light-pink);
     flex-grow: 1;
@@ -69,18 +73,29 @@
     align-items: center;
 }
 
-.brand__title {
+.brand__title{
+    text-transform: uppercase;
+}
+
+.brand__title-one-letter {
     font-family: Lato;
     font-size: 48px;
     font-weight: 900;
     line-height: 58px;
-    text-transform: uppercase;
+    display: block;
 }
 
 .brand__subtitle {
-
+    font-family: Lato;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
 }
 
 .brand__subtitle-pink {
-
+    font-family: Lato;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    color: var(--pink);
 }
