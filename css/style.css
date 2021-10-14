@@ -209,3 +209,144 @@
     color: var(--pink);
     margin: 0 0 20px 18px;
 }
+
+.featured__items-btn {
+    color: var(--pink);
+    border: 1px solid var(--pink);
+    font-size: 16px;
+    line-height: 19px;
+    padding: 14px 38px;
+    margin: 18px 0  95px 0;
+    background-color: #fff;
+}
+
+.featured__items-wrp {
+    display: flex;
+    justify-content: center;
+}
+
+.info {
+    background: #222224;
+}
+
+.info__list {
+    display: flex;
+    justify-content: center;
+}
+
+.info__item {
+    text-align: center;
+    padding: 103px 30px 103px 0; 
+}
+
+.info__item-title {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FBFBFB;
+    text-align: center;
+    margin: 28px 0 16px 0;
+}
+
+.info__item-title_middle {
+    margin: 19px 0 16px 0;
+}
+
+.info__item-text {
+    width: 310px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FBFBFB;
+}
+
+.footer__subscribe {
+    background-image: url(../img/subscribe.jpg);
+    height: 448px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+/* .footer__subscribe-img {
+    text-align: center;
+} */
+.footer__subscribe-box {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer__subscribe-comment {
+    text-align: center;
+    padding: 86px 0 126px 0;
+}
+
+.footer__subscribe-text {
+    width: 360px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    text-align: center;
+    color: #222224;
+    margin-top: 40px;
+}
+
+.letter_subscribe {
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 700;
+    display: block;
+}
+
+.footer__subscribe-sendform {
+    margin-top: 150px;
+}
+
+.footer__subscribe-sendform-text {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    text-align: center;
+    color: #222224;
+    text-transform: uppercase;
+}
+
+.footer__subscribe-text-italic {
+    font-style: italic;
+}
+
+.footer__endline {
+    height: 79px;
+    background-color: #222224;
+}
+
+.footer__endline-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__endline-list {
+    display: flex;
+}
+
+.footer__endline-text {
+    margin-top: 30px;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    color: #FBFBFB;
+}
+
+.footer__endline-item {
+    width: 32px;
+    height: 32px;
+    background-color: #fff;
+    margin: 24px 7px 0 0;
+}
+
+.footer__endline-item-img {
+    display: block;
+    margin: auto;
+}
