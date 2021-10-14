@@ -78,6 +78,17 @@
 
 .brand__title {
     text-transform: uppercase;
+    position: relative;
+}
+
+.brand__title::before {
+    height: 92px;
+    width: 12px;
+    background-color: var(--pink);
+    content: '';
+    position: absolute;
+    left: -30px;
+    top: 5px;
 }
 
 .brand__title-one-letter {
