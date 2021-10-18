@@ -39,7 +39,43 @@
     display: none;
 }
 
+.header__wrp-controls {
+    display: flex;
+}
 
+.form {
+    position: relative;
+}
+
+.header__form-search {
+    padding: 10px 20px;
+    border: none;
+    outline: 1px solid #fff;
+    background-color: var(--black);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+}
+
+.header__form-search:hover {
+    outline: 1px solid var(--pink);
+}
+
+.header__form-search:active {
+    outline: 1px solid var(--light-pink);
+}
+
+.form:before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: var(--black);
+    top: 3px;
+    left: -45px;
+    background-image: url(../img/loupe.svg);
+    background-size: 30px 30px;
+}
 
 .header__wrp {
     display: flex;
@@ -49,7 +85,7 @@
 }
 
 .header__logo {
-    margin: 0 41px 0 0;
+    margin: 0 80px 0 0;
 }
 
 .header__link {
@@ -269,7 +305,7 @@
     position: absolute;
     left: 13px;
     top: 11px;
-} 
+}
 
 .featured__items-overlay,
 .featured__cart_button {
@@ -283,7 +319,8 @@
 
 .featured__cart_button:active {
     color: var(--pink);
-    border: 1px solid var(--pink);;
+    border: 1px solid var(--pink);
+    ;
 }
 
 .featured__items-title {
@@ -426,6 +463,10 @@
 
 .footer__subscribe-text-italic {
     font-style: italic;
+}
+
+.footer__subscribe-form {
+    display: flex;
 }
 
 .footer__subscribe-input {

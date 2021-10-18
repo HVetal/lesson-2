@@ -18,7 +18,11 @@
         <div class="container header__wrp">
             <div class="header__wrp-controls">
                 <img class="header__logo" src="img/logo.svg" alt="logo">
-                <img class="header__search" src="img/loupe.svg" alt="search">
+                <form class="form" action="">
+                    <label class="search-label visually-hidden" for="seacrh">поиск
+                    </label>
+                    <input class="header__form-search" type="search" placeholder="Search" id="search">
+                </form>
             </div>
             <div class="header__wrp-controls">
                 <button class="header__menu-btn" type="button"><svg class="header__btn-burger" width="32" height="23"
@@ -113,7 +117,7 @@
                     <div class="featured__items-wrapper">
                         <img class="featured__items-img" src="img/product_1.jpg" alt="product 1">
                         <div class="featured__items-overlay"></div>
-                        <button class="featured__cart_button">Add to Cart</button>
+                        <button type="button" class="featured__cart_button">Add to Cart</button>
                         <h3 class="featured__items-title">ellery x m'o capsule</h3>
                         <p class="featured__items-desc">Known for her sculptural takes on traditional tailoring,
                             Australian
@@ -126,7 +130,7 @@
                     <div class="featured__items-wrapper">
                         <img class="featured__items-img" src="img/product_2.jpg" alt="product 1">
                         <div class="featured__items-overlay"></div>
-                        <button class="featured__cart_button">Add to Cart</button>
+                        <button type="button" class="featured__cart_button">Add to Cart</button>
                         <h3 class="featured__items-title">ellery x m'o capsule</h3>
                         <p class="featured__items-desc">Known for her sculptural takes on traditional tailoring,
                             Australian
@@ -139,7 +143,7 @@
                     <div class="featured__items-wrapper">
                         <img class="featured__items-img" src="img/product_3.jpg" alt="product 1">
                         <div class="featured__items-overlay"></div>
-                        <button class="featured__cart_button">Add to Cart</button>
+                        <button type="button" class="featured__cart_button">Add to Cart</button>
                         <h3 class="featured__items-title">ellery x m'o capsule</h3>
                         <p class="featured__items-desc">Known for her sculptural takes on traditional tailoring,
                             Australian
@@ -152,7 +156,7 @@
                     <div class="featured__items-wrapper">
                         <img class="featured__items-img" src="img/product_4.jpg" alt="product 1">
                         <div class="featured__items-overlay"></div>
-                        <button class="featured__cart_button">Add to Cart</button>
+                        <button type="button" class="featured__cart_button">Add to Cart</button>
                         <h3 class="featured__items-title">ellery x m'o capsule</h3>
                         <p class="featured__items-desc">Known for her sculptural takes on traditional tailoring,
                             Australian
@@ -165,7 +169,7 @@
                     <div class="featured__items-wrapper">
                         <img class="featured__items-img" src="img/product_5.jpg" alt="product 1">
                         <div class="featured__items-overlay"></div>
-                        <button class="featured__cart_button">Add to Cart</button>
+                        <button type="button" class="featured__cart_button">Add to Cart</button>
                         <h3 class="featured__items-title">ellery x m'o capsule</h3>
                         <p class="featured__items-desc">Known for her sculptural takes on traditional tailoring,
                             Australian
@@ -178,7 +182,7 @@
                     <div class="featured__items-wrapper">
                         <img class="featured__items-img" src="img/product_6.jpg" alt="product 1">
                         <div class="featured__items-overlay"></div>
-                        <button class="featured__cart_button">Add to Cart</button>
+                        <button type="button" class="featured__cart_button">Add to Cart</button>
                         <h3 class="featured__items-title">ellery x m'o capsule</h3>
                         <p class="featured__items-desc">Known for her sculptural takes on traditional tailoring,
                             Australian
@@ -231,9 +235,9 @@
                 <div class="footer__subscribe-sendform">
                     <h3 class="footer__subscribe-sendform-text"><span class="letter_subscribe">subscribe</span> for our
                         newletter and promotion</h3>
-                        <form action="#">
-                            <input class="footer__subscribe-input" type="text" placeholder="Enter Your Email">
-                            <button class="footer__subscribe-btn">Subscribe</button>
+                    <form class="footer__subscribe-form" action="#">
+                        <input class="footer__subscribe-input" type="text" placeholder="Enter Your Email">
+                        <button type="submit" class="footer__subscribe-btn">Subscribe</button>
                     </form>
                 </div>
             </div>
