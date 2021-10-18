@@ -442,6 +442,10 @@
     opacity: 0.67;
 }
 
+.footer__subscribe-input:focus-visible {
+    outline: none;
+}
+
 .footer__subscribe-btn {
     background: #E05C6E;
     color: #fff;
