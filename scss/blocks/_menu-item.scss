@@ -1,0 +1,32 @@
+.menu-item {
+
+    &__title {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: $pink;
+        text-transform: uppercase;
+        padding: 20px 0 12px 0;
+    }
+    
+    &__sub-item {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+    
+        padding: 11px 0 0 20px;
+    }
+    
+    &__sub-item a {
+        text-decoration: none;
+        color: #6F6E6E;
+    }
+    
+    &__sub-item a:hover {
+        color: $grey;
+    }
+    
+    &__sub-item a:active {
+        color: $pink;
+    }
+}

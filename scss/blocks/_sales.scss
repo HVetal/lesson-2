@@ -1,52 +1,56 @@
-.sales__list {
-    display: flex;
-    flex-wrap: wrap;
+.sales {
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    &__item {
+        width: 360px;
+        height: 260px;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    &__item-man {
+        background-image: url(../img/siles_item_man.jpg);
+        margin: 63px 30px 30px 0;
+    }
+    
+    &__item-woman {
+        background-image: url(../img/siles_item_woman.jpg);
+        margin: 63px 30px 30px 0;
+    }
+    
+    &__item-kids {
+        background-image: url(../img/siles_item_kids.jpg);
+        margin: 63px 0 30px 0;
+    }
+    
+    &__item-accessories {
+        width: 1140px;
+        height: 180px;
+        background-image: url(../img/siles_item_accessories.jpg);
+        margin-bottom: 97px;
+    }
+    
+    &__item-text {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    
+    &__item-title {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+        color: $pink;
+        text-transform: uppercase;
+    }
 }
 
-.sales__item {
-    width: 360px;
-    height: 260px;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.sales__item-man {
-    background-image: url(../img/siles_item_man.jpg);
-    margin: 63px 30px 30px 0;
-}
-
-.sales__item-woman {
-    background-image: url(../img/siles_item_woman.jpg);
-    margin: 63px 30px 30px 0;
-}
-
-.sales__item-kids {
-    background-image: url(../img/siles_item_kids.jpg);
-    margin: 63px 0 30px 0;
-}
-
-.sales__item-accessories {
-    width: 1140px;
-    height: 180px;
-    background-image: url(../img/siles_item_accessories.jpg);
-    margin-bottom: 97px;
-}
-
-.sales__item-text {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19px;
-    text-transform: uppercase;
-    color: #fff;
-}
-
-.sales__item-title {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 29px;
-    color: $pink;
-    text-transform: uppercase;
-}
