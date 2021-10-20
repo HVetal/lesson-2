@@ -20,18 +20,14 @@
     
     &__subscribe-text {
         width: 360px;
-        font-size: 20px;
-        line-height: 24px;
-        font-weight: 400;
+        @include font(20px, 24px);
         text-align: center;
         color: #222224;
         margin-top: 40px;
     }
     
     &__letter_subscribe {
-        font-size: 24px;
-        line-height: 40px;
-        font-weight: 700;
+        @include font(24px, 40px, 700);
         display: block;
     }
     
@@ -40,9 +36,7 @@
     }
     
     &__subscribe-sendform-text {
-        font-size: 18px;
-        line-height: 28px;
-        font-weight: 400;
+        @include font(18px, 28px);
         text-align: center;
         color: #222224;
         text-transform: uppercase;
@@ -64,14 +58,12 @@
         background: #E1E1E1;
         border: none;
         border-radius: 20px 0 0 20px;
-        font-size: 14px;
-        line-height: 17px;
-        font-weight: 400;
+        @include font(14px, 17px);
         color: #222224;
         opacity: 0.67;
 
         &:focus-visible {
-            outline: none;
+            outline: $grey;
         }
     }
     
@@ -80,9 +72,7 @@
     &__subscribe-btn {
         background: #E05C6E;
         color: #fff;
-        font-size: 14px;
-        line-height: 17px;
-        font-weight: 400;
+        @include font(14px, 17px);
         border: none;
         border-radius: 0 20px 20px 0;
         height: 49px;
@@ -105,10 +95,7 @@
     
     &__endline-text {
         margin-top: 30px;
-        font-style: Regular;
-        font-size: 16px;
-        line-height: 19px;
-        font-weight: 400;
+        @include font(16px, 19px);
         color: #FBFBFB;
     }
     

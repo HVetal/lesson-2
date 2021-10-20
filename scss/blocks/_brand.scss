@@ -43,22 +43,16 @@
     }
     
     &__title-one-letter {
-      font-size: 48px;
-      font-weight: 900;
-      line-height: 58px;
+      @include font(48px, 58px, 900);
       display: block;
     }
     
     &__subtitle {
-      font-size: 32px;
-      font-weight: 700;
-      line-height: 38px;
+      @include font(32px, 38px, 700);
     }
     
     &__subtitle-pink {
-      font-size: 32px;
-      font-weight: 700;
-      line-height: 38px;
+      @include font(32px, 38px, 700);
       color: $pink;
     }
 } 

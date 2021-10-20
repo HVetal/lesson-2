@@ -26,9 +26,7 @@
         border: none;
         outline: 1px solid #fff;
         background-color: $black;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 17px;
+        @include font(14px, 17px);
 
         &:hover {
             outline: 1px solid $pink;
@@ -96,9 +94,7 @@
     }
     
     &__nav-title {
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 17px;
+        @include font(14px, 17px, 700);
         color: #000000;
         text-transform: uppercase;
         padding: 37px 0 4px 0;

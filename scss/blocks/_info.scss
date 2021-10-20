@@ -12,9 +12,7 @@
     }
     
     &__item-title {
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 24px;
+        @include font(20px, 24px);
         color: #FBFBFB;
         text-align: center;
         margin: 28px 0 16px 0;
@@ -31,9 +29,7 @@
     &__item-text {
         width: 360px;
         text-align: center;
-        font-weight: 300;
-        font-size: 14px;
-        line-height: 17px;
+        @include font(14px, 17px, 300);
         color: #FBFBFB;
         padding: 0 25px;
         box-sizing: border-box;

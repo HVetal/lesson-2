@@ -103,8 +103,9 @@ table {
   outline: 1px solid #fff;
   background-color: #222222;
   font-size: 14px;
-  font-weight: 400;
   line-height: 17px;
+  font-weight: 400;
+  font-style: normal;
 }
 .header__form-search:hover {
   outline: 1px solid #F16D7F;
@@ -157,9 +158,10 @@ table {
   display: block;
 }
 .header__nav-title {
-  font-weight: 700;
   font-size: 14px;
   line-height: 17px;
+  font-weight: 700;
+  font-style: normal;
   color: #000000;
   text-transform: uppercase;
   padding: 37px 0 4px 0;
@@ -169,17 +171,19 @@ table {
     background: rgba(0, 0, 0, 0.6);
 } */
 .menu-item__title {
-  font-weight: 400;
   font-size: 14px;
   line-height: 17px;
+  font-weight: 400;
+  font-style: normal;
   color: #F16D7F;
   text-transform: uppercase;
   padding: 20px 0 12px 0;
 }
 .menu-item__sub-item {
-  font-weight: 400;
   font-size: 14px;
   line-height: 17px;
+  font-weight: 400;
+  font-style: normal;
   padding: 11px 0 0 20px;
 }
 .menu-item__sub-item a {
@@ -234,19 +238,22 @@ table {
 }
 .brand__title-one-letter {
   font-size: 48px;
-  font-weight: 900;
   line-height: 58px;
+  font-weight: 900;
+  font-style: normal;
   display: block;
 }
 .brand__subtitle {
   font-size: 32px;
-  font-weight: 700;
   line-height: 38px;
+  font-weight: 700;
+  font-style: normal;
 }
 .brand__subtitle-pink {
   font-size: 32px;
-  font-weight: 700;
   line-height: 38px;
+  font-weight: 700;
+  font-style: normal;
   color: #F16D7F;
 }
 
@@ -284,15 +291,17 @@ table {
 }
 .sales__item-text {
   font-size: 16px;
-  font-weight: 400;
   line-height: 19px;
+  font-weight: 400;
+  font-style: normal;
   text-transform: uppercase;
   color: #fff;
 }
 .sales__item-title {
   font-size: 24px;
-  font-weight: 700;
   line-height: 29px;
+  font-weight: 700;
+  font-style: normal;
   color: #F16D7F;
   text-transform: uppercase;
 }
@@ -300,14 +309,16 @@ table {
 .featured__items-header {
   font-size: 30px;
   line-height: 36px;
+  font-weight: 400;
+  font-style: normal;
   color: #222222;
-  font-weight: normal;
   text-align: center;
 }
 .featured__items-text {
-  font-weight: normal;
   font-size: 14px;
   line-height: 17px;
+  font-weight: 400;
+  font-style: normal;
   text-align: center;
   color: #9F9F9F;
   margin-bottom: 48px;
@@ -336,9 +347,11 @@ table {
   position: relative;
 }
 .featured__cart_button {
-  color: #fff;
   font-size: 14px;
   line-height: 17px;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -368,24 +381,27 @@ table {
   border: 1px solid #F16D7F;
 }
 .featured__items-title {
-  font-weight: 400;
   font-size: 13px;
   line-height: 16px;
+  font-weight: 400;
+  font-style: normal;
   color: #000000;
   text-transform: uppercase;
   margin: 0 0 12px 18px;
 }
 .featured__items-desc {
-  font-weight: 300;
   font-size: 14px;
   line-height: 17px;
+  font-weight: 300;
+  font-style: normal;
   color: #5D5D5D;
   margin: 0 28px 18px 16px;
 }
 .featured__items-price {
-  font-weight: 400;
   font-size: 16px;
   line-height: 19px;
+  font-weight: 400;
+  font-style: normal;
   color: #F16D7F;
   margin: 0 0 20px 18px;
 }
@@ -394,6 +410,8 @@ table {
   border: 1px solid #F16D7F;
   font-size: 16px;
   line-height: 19px;
+  font-weight: 400;
+  font-style: normal;
   padding: 14px 38px;
   margin: 18px 0 95px 0;
   background-color: #fff;
@@ -422,9 +440,10 @@ table {
   padding: 103px 30px 103px 0;
 }
 .info__item-title {
-  font-weight: 400;
   font-size: 20px;
   line-height: 24px;
+  font-weight: 400;
+  font-style: normal;
   color: #FBFBFB;
   text-align: center;
   margin: 28px 0 16px 0;
@@ -438,9 +457,10 @@ table {
 .info__item-text {
   width: 360px;
   text-align: center;
-  font-weight: 300;
   font-size: 14px;
   line-height: 17px;
+  font-weight: 300;
+  font-style: normal;
   color: #FBFBFB;
   padding: 0 25px;
   box-sizing: border-box;
@@ -466,6 +486,7 @@ table {
   font-size: 20px;
   line-height: 24px;
   font-weight: 400;
+  font-style: normal;
   text-align: center;
   color: #222224;
   margin-top: 40px;
@@ -474,6 +495,7 @@ table {
   font-size: 24px;
   line-height: 40px;
   font-weight: 700;
+  font-style: normal;
   display: block;
 }
 .footer__subscribe-sendform {
@@ -483,6 +505,7 @@ table {
   font-size: 18px;
   line-height: 28px;
   font-weight: 400;
+  font-style: normal;
   text-align: center;
   color: #222224;
   text-transform: uppercase;
@@ -504,11 +527,12 @@ table {
   font-size: 14px;
   line-height: 17px;
   font-weight: 400;
+  font-style: normal;
   color: #222224;
   opacity: 0.67;
 }
 .footer__subscribe-input:focus-visible {
-  outline: none;
+  outline: #9F9F9F;
 }
 .footer__subscribe-btn {
   background: #E05C6E;
@@ -516,6 +540,7 @@ table {
   font-size: 14px;
   line-height: 17px;
   font-weight: 400;
+  font-style: normal;
   border: none;
   border-radius: 0 20px 20px 0;
   height: 49px;
@@ -534,10 +559,10 @@ table {
 }
 .footer__endline-text {
   margin-top: 30px;
-  font-style: Regular;
   font-size: 16px;
   line-height: 19px;
   font-weight: 400;
+  font-style: normal;
   color: #FBFBFB;
 }
 .footer__endline-item {

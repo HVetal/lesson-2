@@ -1,17 +1,13 @@
 .featured {
 
     &__items-header {
-        font-size: 30px;
-        line-height: 36px;
+        @include font(30px, 36px);
         color: $black;
-        font-weight: normal;
         text-align: center;
     }
     
     &__items-text {
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 17px;
+        @include font(14px, 17px);
         text-align: center;
         color: $grey;
         margin-bottom: 48px;
@@ -46,9 +42,8 @@
     }
     
     &__cart_button {
+        @include font(14px, 17px);
         color: #fff;
-        font-size: 14px;
-        line-height: 17px;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -85,26 +80,20 @@
     }
     
     &__items-title {
-        font-weight: 400;
-        font-size: 13px;
-        line-height: 16px;
+        @include font(13px, 16px);
         color: #000000;
         text-transform: uppercase;
         margin: 0 0 12px 18px;
     }
     
     &__items-desc {
-        font-weight: 300;
-        font-size: 14px;
-        line-height: 17px;
+        @include font(14px, 17px, 300);
         color: #5D5D5D;
         margin: 0 28px 18px 16px;
     }
     
     &__items-price {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 19px;
+        @include font(16px, 19px);
         color: $pink;
         margin: 0 0 20px 18px;
     }
@@ -112,8 +101,7 @@
     &__items-btn {
         color: $pink;
         border: 1px solid $pink;
-        font-size: 16px;
-        line-height: 19px;
+        @include font(16px, 19px);
         padding: 14px 38px;
         margin: 18px 0 95px 0;
         background-color: #fff;
