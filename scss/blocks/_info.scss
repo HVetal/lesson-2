@@ -1,0 +1,38 @@
+.info {
+    background: #222224;
+
+    &__list {
+        display: flex;
+        justify-content: center;
+    }
+    
+    &__item {
+        text-align: center;
+        padding: 103px 30px 103px 0;
+    }
+    
+    &__item-title {
+        @include font(20px, 24px);
+        color: #FBFBFB;
+        text-align: center;
+        margin: 28px 0 16px 0;
+    }
+    
+    &__item-title_middle {
+        margin: 19px 0 16px 0;
+    }
+    
+    &__item-title_quality {
+        margin: 25px 0 16px 0;
+    }
+    
+    &__item-text {
+        width: 360px;
+        text-align: center;
+        @include font(14px, 17px, 300);
+        color: #FBFBFB;
+        padding: 0 25px;
+        box-sizing: border-box;
+    }
+}
+
