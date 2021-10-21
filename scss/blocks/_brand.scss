@@ -55,5 +55,9 @@
       @include font(32px, 38px, 700);
       color: $pink;
     }
+
+    &__wrp--show {
+        opacity: 0.3;
+    } 
 } 
 /*# sourceMappingURL=brand.css.map */

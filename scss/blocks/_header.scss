@@ -27,6 +27,7 @@
         outline: 1px solid #fff;
         background-color: $black;
         @include font(14px, 17px);
+        color: #fff;
 
         &:hover {
             outline: 1px solid $pink;
@@ -35,6 +36,10 @@
     
     &__form-search:active {
         outline: 1px solid $light-pink;
+    }
+
+    &__form-search:focus {
+        outline: 2px solid #fff;
     }
     
     &__wrp {
@@ -100,7 +105,3 @@
         padding: 37px 0 4px 0;
     }
 }
-
-/* .wrp--show {
-    background: rgba(0, 0, 0, 0.6);
-} */

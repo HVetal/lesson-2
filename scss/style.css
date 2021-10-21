@@ -113,6 +113,7 @@ table {
   line-height: 17px;
   font-weight: 400;
   font-style: normal;
+  color: #fff;
 }
 
 .header__form-search:hover {
@@ -121,6 +122,10 @@ table {
 
 .header__form-search:active {
   outline: 1px solid #F1E4E6;
+}
+
+.header__form-search:focus {
+  outline: 2px solid #fff;
 }
 
 .header__wrp {
@@ -193,9 +198,6 @@ table {
   padding: 37px 0 4px 0;
 }
 
-/* .wrp--show {
-    background: rgba(0, 0, 0, 0.6);
-} */
 .menu-item__title {
   font-size: 14px;
   line-height: 17px;
@@ -215,7 +217,8 @@ table {
 }
 
 .menu-item__sub-item a {
-  text-decoration: none;
+  -webkit-text-decoration-color: #fff;
+          text-decoration-color: #fff;
   color: #6F6E6E;
 }
 
@@ -225,6 +228,11 @@ table {
 
 .menu-item__sub-item a:active {
   color: #F16D7F;
+}
+
+.menu-item__sub-item a:focus {
+  -webkit-text-decoration-color: #6F6E6E;
+          text-decoration-color: #6F6E6E;
 }
 
 .brand {
@@ -297,6 +305,10 @@ table {
   font-weight: 700;
   font-style: normal;
   color: #F16D7F;
+}
+
+.brand__wrp--show {
+  opacity: 0.3;
 }
 .sales__list {
   display: -webkit-box;
@@ -507,6 +519,10 @@ table {
   opacity: 0.5;
 }
 
+.featured__items-btn:focus {
+  border: 1px solid #9F9F9F;
+}
+
 .featured__items-wrp {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -646,8 +662,12 @@ table {
   opacity: 0.67;
 }
 
-.footer__subscribe-input:focus-visible {
-  outline: #9F9F9F;
+.footer__subscribe-input:focus {
+  outline: 2px solid #9F9F9F;
+}
+
+.footer__subscribe-input:hover {
+  outline: 1px solid #222222;
 }
 
 .footer__subscribe-btn {
@@ -661,6 +681,18 @@ table {
   border-radius: 0 20px 20px 0;
   height: 49px;
   width: 100px;
+}
+
+.footer__subscribe-btn:focus {
+  outline: 2px solid #9F9F9F;
+}
+
+.footer__subscribe-btn:hover {
+  outline: 1px solid #222222;
+}
+
+.footer__subscribe-btn:active {
+  opacity: 0.5;
 }
 
 .footer__endline {
@@ -698,6 +730,19 @@ table {
   background-color: #fff;
   margin: 24px 7px 0 0;
   position: relative;
+  display: inline-block;
+}
+
+.footer__endline-item:hover {
+  background-color: #F16D7F;
+}
+
+.footer__endline-item:focus-within {
+  background-color: #9F9F9F;
+}
+
+.footer__endline-item:active {
+  opacity: 0.5;
 }
 
 .footer__endline-item-img {
@@ -707,10 +752,7 @@ table {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   fill: #000;
-}
-
-.footer__endline-item-img:hover {
-  fill: #F16D7F;
+  display: block;
 }
 
 .footer__insta_img {
@@ -720,5 +762,6 @@ table {
 
 .footer__insta_img:hover {
   background: #fff;
+  fill: #F16D7F;
 }
 /*# sourceMappingURL=style.css.map */

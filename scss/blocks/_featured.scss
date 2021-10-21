@@ -78,7 +78,7 @@
         color: $pink;
         border: 1px solid $pink;
     }
-    
+
     &__items-title {
         @include font(13px, 16px);
         color: #000000;
@@ -110,10 +110,14 @@
             background-color: $pink;
             color: #fff;
         }
-    }
-    
-    &__items-btn:active {
-        opacity: 0.5;
+
+        &:active {
+            opacity: 0.5;
+        }
+
+        &:focus {
+            border: 1px solid $grey;
+        }
     }
     
     &__items-wrp {

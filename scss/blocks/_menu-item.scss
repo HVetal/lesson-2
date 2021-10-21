@@ -13,7 +13,7 @@
     }
     
     &__sub-item a {
-        text-decoration: none;
+        text-decoration-color: #fff;
         color: #6F6E6E;
     }
     
@@ -24,4 +24,9 @@
     &__sub-item a:active {
         color: $pink;
     }
+
+    &__sub-item a:focus {
+        text-decoration-color: #6F6E6E;
+    }
+
 }
