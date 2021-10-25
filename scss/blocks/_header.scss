@@ -75,10 +75,11 @@
         &:active {
             fill: $pink;
         }
-
+        
         &:focus {
-            fill: #504e4e;
-            // border: 1px solid $grey;
+            fill: $grey;
+            border: none;
+            outline: none;
         }
     }
 
