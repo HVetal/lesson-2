@@ -4,7 +4,7 @@
     &__wrp-controls {
         display: flex;
     }
-    
+
     &__form {
         position: relative;
 
@@ -20,7 +20,7 @@
             background-size: 30px 30px;
         }
     }
-    
+
     &__form-search {
         padding: 10px 20px;
         border: none;
@@ -33,7 +33,7 @@
             outline: 1px solid $pink;
         }
     }
-    
+
     &__form-search:active {
         outline: 1px solid $light-pink;
     }
@@ -41,7 +41,7 @@
     &__form-search:focus {
         outline: 2px solid #fff;
     }
-    
+
     &__wrp {
         display: flex;
         justify-content: space-between;
@@ -49,39 +49,40 @@
         align-items: center;
         position: relative;
     }
-    
+
     &__logo {
         margin: 0 80px 0 0;
     }
-    
+
     &__link {
         margin: 0 0 0 31px;
     }
-    
+
     &__menu-btn {
         border: none;
         background-color: transparent;
     }
-    
-    &__btn-burger, 
-    &__link-person, 
+
+    &__btn-burger,
+    &__link-person,
     &__link-basket {
         fill: #E8E8E8;
-    
+
         &:hover {
-        fill: $light-pink;
+            fill: $light-pink;
         }
 
         &:active {
             fill: $pink;
         }
-
+        
         &:focus {
             fill: $grey;
-            border: 1px solid $grey;
+            border: none;
+            outline: none;
         }
     }
-    
+
     &__nav {
         position: absolute;
         background-color: #fff;
@@ -93,11 +94,11 @@
         height: 765px;
         padding-left: 50px;
     }
-    
+
     &__nav--show {
         display: block;
     }
-    
+
     &__nav-title {
         @include font(14px, 17px, 700);
         color: #000000;
@@ -105,3 +106,20 @@
         padding: 37px 0 4px 0;
     }
 }
+
+@media (max-width: $mobile-width) {
+    .header {
+        &__link {
+            display: none;
+        }
+
+        &__logo {
+            margin: 0 61px 0 0;
+        }
+
+        &__form {
+            display: none;
+        }
+    }
+}
+
