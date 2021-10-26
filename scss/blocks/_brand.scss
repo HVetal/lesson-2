@@ -13,11 +13,13 @@
     
     &__img {
       background: rgba(113, 103, 105, 0.08);
+      width: 50%;
     }
     
     &__wrp {
       background-color: $light-pink;
-      width: 800px;
+      box-sizing: border-box;
+      width: 50%;
       padding: 0 0 0 92px;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -60,4 +62,69 @@
         opacity: 0.3;
     } 
 } 
+
+@media (max-width: $tablet-width) {
+  .brand {
+
+      background-color: $light-pink;
+
+      &__img {
+          height: auto;
+      }
+
+      &__title-one-letter {
+        @include font(44px, 53px, 900);
+      }
+      
+      &__subtitle {
+        @include font(24px, 29px, 700);
+      }
+      
+      &__subtitle-pink {
+        @include font(24px, 29px, 700);
+      }
+
+      &__wrp {
+        padding: 0 0 0 68px;
+        width: 100%;
+      }
+
+      &__title::before {
+        top: 0;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .brand {
+      &__img {
+          display: none;
+      }
+
+      &__title-one-letter {
+        @include font(38px, 45px, 900);
+      }
+      
+      &__subtitle {
+        @include font(20px, 24px, 700);
+      }
+      
+      &__subtitle-pink {
+        @include font(20px, 24px, 700);
+      }
+
+      &__wrp {
+        min-height: 363px;
+        padding: 0 0 0 83px; 
+      }
+
+      &__title {
+  
+        &::before {
+          height: 61px;
+          top: 5px
+        }
+      }
+  }
+}
 /*# sourceMappingURL=brand.css.map */

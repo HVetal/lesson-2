@@ -125,3 +125,35 @@
         justify-content: center;
     }
 }
+
+
+@media (max-width: $tablet-width) {
+    .featured {
+        &__items-list {
+            box-sizing: border-box;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        &__items-text {
+            margin-bottom: 74px;
+        }
+    }
+}
+
+@media (max-width: $tablet-mid-width) {
+    .featured {
+        &__items-list {
+            justify-content: space-around;
+        }
+    }
+}
+
+@media (max-width: $mobile-width) {
+    .featured {
+        &__items-item {
+            width: 100%;
+        }
+    }
+}

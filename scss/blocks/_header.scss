@@ -106,3 +106,20 @@
         padding: 37px 0 4px 0;
     }
 }
+
+@media (max-width: $mobile-width) {
+    .header {
+        &__link {
+            display: none;
+        }
+
+        &__logo {
+            margin: 0 61px 0 0;
+        }
+
+        &__form {
+            display: none;
+        }
+    }
+}
+

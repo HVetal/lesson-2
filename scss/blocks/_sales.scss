@@ -2,20 +2,21 @@
 
     &__list {
         display: flex;
+        justify-content: space-between;
         flex-wrap: wrap;
     }
     
     &__item {
-        width: 360px;
-        height: 260px;
+        width: 31%;
+        min-height: 260px;
         background-repeat: no-repeat;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    
-    &__item-man {
+
+   &__item-man {
         background-image: url(../img/siles_item_man.jpg);
         margin: 63px 30px 30px 0;
     }
@@ -31,8 +32,8 @@
     }
     
     &__item-accessories {
-        width: 1140px;
-        height: 180px;
+        width: 100%;
+        min-height: 180px;
         background-image: url(../img/siles_item_accessories.jpg);
         margin-bottom: 97px;
     }
@@ -47,6 +48,57 @@
         @include font(24px, 29px, 700);
         color: $pink;
         text-transform: uppercase;
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .sales {
+        &__item {
+            min-height: 168px;
+        }
+
+        &__item-accessories {
+            min-height: 116px;
+            margin-bottom: 188px;
+        }
+
+        &__item-man {
+            margin: 19px 20px 20px 0;
+        }
+        
+        &__item-woman {
+            margin: 19px 20px 20px 0;
+        }
+        
+        &__item-kids {
+            margin: 19px 0 20px 0;
+        }
+    }
+}
+
+@media (max-width: $mobile-width) {
+    .sales {
+        &__item {
+            width: 100%;
+            min-height: 247px;
+        }
+        &__item-accessories {
+            min-height: 111px;
+            margin: 0 16px 64px 16px;
+        }
+        
+        &__item-man {
+            margin: 64px 16px 32px 16px;
+        }
+
+        &__item-kids {
+            margin: 0 16px 32px 16px;
+        }
+
+        &__item-woman {
+            margin: 0 16px 32px 16px;
+        }
+
     }
 }
 
