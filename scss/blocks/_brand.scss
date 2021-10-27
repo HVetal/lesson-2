@@ -1,130 +1,133 @@
 .brand {
+  display: flex;
+  justify-content: center;
+
+  &__block-opacity {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+  }
 
-    &__block-opacity {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-    }
-    
-    &__img {
-      background: rgba(113, 103, 105, 0.08);
+  &__img {
+    background: rgba(113, 103, 105, 0.08);
+    width: 50%;
+
+    @include tablet {
       width: 50%;
-    }
-    
-    &__wrp {
-      background-color: $light-pink;
-      box-sizing: border-box;
-      width: 50%;
-      padding: 0 0 0 92px;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-    }
-    
-    &__title {
-      text-transform: uppercase;
-      position: relative;
-
-      &::before {
-        height: 92px;
-        width: 12px;
-        background-color: $pink;
-        content: '';
-        position: absolute;
-        left: -30px;
-        top: 5px;
-      }
-    }
-    
-    &__title-one-letter {
-      @include font(48px, 58px, 900);
-      display: block;
-    }
-    
-    &__subtitle {
-      @include font(32px, 38px, 700);
-    }
-    
-    &__subtitle-pink {
-      @include font(32px, 38px, 700);
-      color: $pink;
+      height: auto;
     }
 
-    &__wrp--show {
-        opacity: 0.3;
-    } 
-} 
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__wrp {
+    background-color: $light-pink;
+    box-sizing: border-box;
+    width: 50%;
+    padding: 0 0 0 92px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    position: relative;
+
+    &::before {
+      height: 92px;
+      width: 12px;
+      background-color: $pink;
+      content: '';
+      position: absolute;
+      left: -30px;
+      top: 5px;
+    }
+  }
+
+  &__title-one-letter {
+    @include font(48px, 58px, 900);
+    display: block;
+  }
+
+  &__subtitle {
+    @include font(32px, 38px, 700);
+  }
+
+  &__subtitle-pink {
+    @include font(32px, 38px, 700);
+    color: $pink;
+  }
+
+  &__wrp--show {
+    opacity: 0.3;
+  }
+}
 
 @media (max-width: $tablet-width) {
   .brand {
 
-      background-color: $light-pink;
+    &__title-one-letter {
+      @include font(44px, 53px, 900);
+    }
 
-      &__img {
-          height: auto;
-      }
+    &__subtitle {
+      @include font(24px, 29px, 700);
+    }
 
-      &__title-one-letter {
-        @include font(44px, 53px, 900);
-      }
-      
-      &__subtitle {
-        @include font(24px, 29px, 700);
-      }
-      
-      &__subtitle-pink {
-        @include font(24px, 29px, 700);
-      }
+    &__subtitle-pink {
+      @include font(24px, 29px, 700);
+    }
 
-      &__wrp {
-        padding: 0 0 0 68px;
-        width: 100%;
-      }
+    &__wrp {
+      padding: 0 0 0 68px;
+      width: 100%;
+    }
 
-      &__title::before {
-        top: 0;
+    &__title::before {
+      top: 0;
     }
   }
 }
 
 @media (max-width: $mobile-width) {
   .brand {
-      &__img {
-          display: none;
-      }
 
-      &__title-one-letter {
-        @include font(38px, 45px, 900);
-      }
-      
-      &__subtitle {
-        @include font(20px, 24px, 700);
-      }
-      
-      &__subtitle-pink {
-        @include font(20px, 24px, 700);
-      }
+    background-color: $light-pink;
 
-      &__wrp {
-        min-height: 363px;
-        padding: 0 0 0 83px; 
-      }
+    &__title-one-letter {
+      @include font(38px, 45px, 900);
+    }
 
-      &__title {
-  
-        &::before {
-          height: 61px;
-          top: 5px
-        }
+    &__subtitle {
+      @include font(20px, 24px, 700);
+    }
+
+    &__subtitle-pink {
+      @include font(20px, 24px, 700);
+    }
+
+    &__wrp {
+      min-height: 363px;
+      padding: 0 0 0 83px;
+    }
+
+    &__title {
+
+      &::before {
+        height: 61px;
+        top: 5px
       }
+    }
   }
 }
+
 /*# sourceMappingURL=brand.css.map */

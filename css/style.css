@@ -79,12 +79,12 @@ table {
 
 @media (max-width: 1599px) {
   .container {
-    width: 768px;
+    width: 736px;
   }
 }
 @media (max-width: 767px) {
   .container {
-    width: 375px;
+    width: 363px;
   }
 }
 .header {
@@ -189,9 +189,6 @@ table {
   .header__logo {
     margin: 0 61px 0 0;
   }
-  .header__form {
-    display: none;
-  }
 }
 .menu-item__title {
   font-size: 14px;
@@ -238,6 +235,17 @@ table {
 .brand__img {
   background: rgba(113, 103, 105, 0.08);
   width: 50%;
+}
+@media (max-width: 1599px) {
+  .brand__img {
+    width: 50%;
+    height: auto;
+  }
+}
+@media (max-width: 767px) {
+  .brand__img {
+    display: none;
+  }
 }
 .brand__wrp {
   background-color: #F1E4E6;
@@ -289,12 +297,6 @@ table {
 }
 
 @media (max-width: 1599px) {
-  .brand {
-    background-color: #F1E4E6;
-  }
-  .brand__img {
-    height: auto;
-  }
   .brand__title-one-letter {
     font-size: 44px;
     line-height: 53px;
@@ -322,8 +324,8 @@ table {
   }
 }
 @media (max-width: 767px) {
-  .brand__img {
-    display: none;
+  .brand {
+    background-color: #F1E4E6;
   }
   .brand__title-one-letter {
     font-size: 38px;
@@ -367,6 +369,17 @@ table {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 1599px) {
+  .sales__item {
+    min-height: 168px;
+  }
+}
+@media (max-width: 767px) {
+  .sales__item {
+    width: 100%;
+    min-height: 247px;
+  }
+}
 .sales__item-man {
   background-image: url(../img/siles_item_man.jpg);
   margin: 63px 30px 30px 0;
@@ -384,6 +397,18 @@ table {
   min-height: 180px;
   background-image: url(../img/siles_item_accessories.jpg);
   margin-bottom: 97px;
+}
+@media (max-width: 1599px) {
+  .sales__item-accessories {
+    min-height: 116px;
+    margin-bottom: 188px;
+  }
+}
+@media (max-width: 767px) {
+  .sales__item-accessories {
+    min-height: 111px;
+    margin: 0 16px 64px 16px;
+  }
 }
 .sales__item-text {
   font-size: 16px;
@@ -403,13 +428,6 @@ table {
 }
 
 @media (max-width: 1599px) {
-  .sales__item {
-    min-height: 168px;
-  }
-  .sales__item-accessories {
-    min-height: 116px;
-    margin-bottom: 188px;
-  }
   .sales__item-man {
     margin: 19px 20px 20px 0;
   }
@@ -421,22 +439,17 @@ table {
   }
 }
 @media (max-width: 767px) {
-  .sales__item {
-    width: 100%;
-    min-height: 247px;
-  }
-  .sales__item-accessories {
-    min-height: 111px;
-    margin: 0 16px 64px 16px;
-  }
   .sales__item-man {
     margin: 64px 16px 32px 16px;
+    background-position: center;
   }
   .sales__item-kids {
     margin: 0 16px 32px 16px;
+    background-position: center;
   }
   .sales__item-woman {
     margin: 0 16px 32px 16px;
+    background-position: center;
   }
 }
 .featured__items-header {
@@ -456,15 +469,38 @@ table {
   color: #9F9F9F;
   margin-bottom: 48px;
 }
+@media (max-width: 1599px) {
+  .featured__items-text {
+    margin-bottom: 74px;
+  }
+}
 .featured__items-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 1599px) {
+  .featured__items-list {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 1084px) {
+  .featured__items-list {
+    justify-content: space-around;
+  }
+}
 .featured__items-item {
   width: 360px;
   background: #F8F8F8;
   margin-bottom: 30px;
+}
+@media (max-width: 767px) {
+  .featured__items-item {
+    width: 100%;
+  }
 }
 .featured__items-img {
   margin-bottom: 24px;
@@ -564,27 +600,6 @@ table {
   justify-content: center;
 }
 
-@media (max-width: 1599px) {
-  .featured__items-list {
-    box-sizing: border-box;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .featured__items-text {
-    margin-bottom: 74px;
-  }
-}
-@media (max-width: 1084px) {
-  .featured__items-list {
-    justify-content: space-around;
-  }
-}
-@media (max-width: 767px) {
-  .featured__items-item {
-    width: 100%;
-  }
-}
 .info {
   background: #222224;
 }
@@ -801,6 +816,10 @@ table {
   }
   .footer__endline {
     height: 143px;
+  }
+  .footer__endline {
+    display: flex;
+    align-items: center;
   }
 }
 

@@ -7,17 +7,17 @@
         background-repeat: no-repeat;
         margin: 0 auto;
     }
-    
+
     &__subscribe-box {
         display: flex;
         justify-content: space-evenly;
     }
-    
+
     &__subscribe-comment {
         text-align: center;
         padding: 86px 0 126px 0;
     }
-    
+
     &__subscribe-text {
         width: 360px;
         @include font(20px, 24px);
@@ -25,16 +25,16 @@
         color: #222224;
         margin-top: 40px;
     }
-    
+
     &__letter_subscribe {
         @include font(24px, 40px, 700);
         display: block;
     }
-    
+
     &__subscribe-sendform {
         margin-top: 150px;
     }
-    
+
     &__subscribe-sendform-text {
         @include font(18px, 28px);
         text-align: center;
@@ -42,15 +42,15 @@
         text-transform: uppercase;
         margin-bottom: 32px;
     }
-    
+
     &__subscribe-text-italic {
         font-style: italic;
     }
-    
+
     &__subscribe-form {
         display: flex;
     }
-    
+
     &__subscribe-input {
         height: 49px;
         width: 256px;
@@ -70,9 +70,9 @@
             outline: 1px solid $black;
         }
     }
-    
 
-    
+
+
     &__subscribe-btn {
         background: #E05C6E;
         color: #fff;
@@ -94,28 +94,28 @@
             opacity: 0.5;
         }
     }
-    
+
     &__endline {
         height: 79px;
         background-color: #222224;
     }
-    
+
     &__endline-box {
         display: flex;
         justify-content: space-between;
     }
-    
+
     &__endline-list {
         display: flex;
 
     }
-    
+
     &__endline-text {
         margin-top: 30px;
         @include font(16px, 19px);
         color: #FBFBFB;
     }
-    
+
     &__endline-item {
         width: 32px;
         height: 32px;
@@ -136,7 +136,7 @@
             opacity: 0.5;
         }
     }
-    
+
     &__endline-item-img {
         position: absolute;
         left: 50%;
@@ -145,7 +145,7 @@
         fill: #000;
         display: block;
     }
-    
+
     &__insta_img {
         background-color: $pink;
         fill: #fff;
@@ -188,6 +188,11 @@
 
         &__endline {
             height: 143px;
+        }
+
+        &__endline {
+            display: flex;
+            align-items: center;
         }
     }
 }

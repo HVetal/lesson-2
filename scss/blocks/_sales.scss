@@ -5,7 +5,7 @@
         justify-content: space-between;
         flex-wrap: wrap;
     }
-    
+
     &__item {
         width: 31%;
         min-height: 260px;
@@ -14,36 +14,55 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        @include tablet {
+            min-height: 168px;
+        }
+
+        @include mobile {
+            width: 100%;
+            min-height: 247px;
+        }
     }
 
-   &__item-man {
+    &__item-man {
         background-image: url(../img/siles_item_man.jpg);
         margin: 63px 30px 30px 0;
     }
-    
+
     &__item-woman {
         background-image: url(../img/siles_item_woman.jpg);
         margin: 63px 30px 30px 0;
     }
-    
+
     &__item-kids {
         background-image: url(../img/siles_item_kids.jpg);
         margin: 63px 0 30px 0;
     }
-    
+
     &__item-accessories {
         width: 100%;
         min-height: 180px;
         background-image: url(../img/siles_item_accessories.jpg);
         margin-bottom: 97px;
+
+        @include tablet {
+            min-height: 116px;
+            margin-bottom: 188px;
+        }
+
+        @include mobile {
+            min-height: 111px;
+            margin: 0 16px 64px 16px;
+        }
     }
-    
+
     &__item-text {
         @include font(16px, 19px);
         text-transform: uppercase;
         color: #fff;
     }
-    
+
     &__item-title {
         @include font(24px, 29px, 700);
         color: $pink;
@@ -53,23 +72,19 @@
 
 @media (max-width: $tablet-width) {
     .sales {
-        &__item {
-            min-height: 168px;
-        }
-
-        &__item-accessories {
-            min-height: 116px;
-            margin-bottom: 188px;
-        }
+        // &__item-accessories {
+        //     min-height: 116px;
+        //     margin-bottom: 188px;
+        // }
 
         &__item-man {
             margin: 19px 20px 20px 0;
         }
-        
+
         &__item-woman {
             margin: 19px 20px 20px 0;
         }
-        
+
         &__item-kids {
             margin: 19px 0 20px 0;
         }
@@ -78,27 +93,30 @@
 
 @media (max-width: $mobile-width) {
     .sales {
-        &__item {
-            width: 100%;
-            min-height: 247px;
-        }
-        &__item-accessories {
-            min-height: 111px;
-            margin: 0 16px 64px 16px;
-        }
-        
+        // &__item {
+        //     width: 100%;
+        //     min-height: 247px;
+        // }
+
+        // &__item-accessories {
+        //     min-height: 111px;
+        //     margin: 0 16px 64px 16px;
+        // }
+
         &__item-man {
             margin: 64px 16px 32px 16px;
+            background-position: center;
         }
 
         &__item-kids {
             margin: 0 16px 32px 16px;
+            background-position: center;
         }
 
         &__item-woman {
             margin: 0 16px 32px 16px;
+            background-position: center;
         }
 
     }
 }
-

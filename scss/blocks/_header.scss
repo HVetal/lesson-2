@@ -75,7 +75,7 @@
         &:active {
             fill: $pink;
         }
-        
+
         &:focus {
             fill: $grey;
             border: none;
@@ -116,10 +116,5 @@
         &__logo {
             margin: 0 61px 0 0;
         }
-
-        &__form {
-            display: none;
-        }
     }
 }
-
