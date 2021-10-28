@@ -49,6 +49,7 @@
         @include tablet {
             min-height: 116px;
             margin-bottom: 188px;
+            background-position: center;
         }
 
         @include mobile {
@@ -79,14 +80,17 @@
 
         &__item-man {
             margin: 19px 20px 20px 0;
+            background-position: right;
         }
 
         &__item-woman {
             margin: 19px 20px 20px 0;
+            background-position: center;
         }
 
         &__item-kids {
             margin: 19px 0 20px 0;
+            background-position: left;
         }
     }
 }

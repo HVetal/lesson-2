@@ -77,14 +77,14 @@ table {
   margin: -1px;
 }
 
-@media (max-width: 1599px) {
+@media (max-width: 1139px) {
   .container {
-    width: 736px;
+    width: 96%;
   }
 }
 @media (max-width: 767px) {
   .container {
-    width: 363px;
+    width: 91%;
   }
 }
 .header {
@@ -236,7 +236,7 @@ table {
   background: rgba(113, 103, 105, 0.08);
   width: 50%;
 }
-@media (max-width: 1599px) {
+@media (max-width: 1139px) {
   .brand__img {
     width: 50%;
     height: auto;
@@ -296,7 +296,7 @@ table {
   opacity: 0.3;
 }
 
-@media (max-width: 1599px) {
+@media (max-width: 1139px) {
   .brand__title-one-letter {
     font-size: 44px;
     line-height: 53px;
@@ -369,7 +369,7 @@ table {
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 1599px) {
+@media (max-width: 1139px) {
   .sales__item {
     min-height: 168px;
   }
@@ -398,10 +398,11 @@ table {
   background-image: url(../img/siles_item_accessories.jpg);
   margin-bottom: 97px;
 }
-@media (max-width: 1599px) {
+@media (max-width: 1139px) {
   .sales__item-accessories {
     min-height: 116px;
     margin-bottom: 188px;
+    background-position: center;
   }
 }
 @media (max-width: 767px) {
@@ -427,15 +428,18 @@ table {
   text-transform: uppercase;
 }
 
-@media (max-width: 1599px) {
+@media (max-width: 1139px) {
   .sales__item-man {
     margin: 19px 20px 20px 0;
+    background-position: right;
   }
   .sales__item-woman {
     margin: 19px 20px 20px 0;
+    background-position: center;
   }
   .sales__item-kids {
     margin: 19px 0 20px 0;
+    background-position: left;
   }
 }
 @media (max-width: 767px) {
@@ -469,7 +473,7 @@ table {
   color: #9F9F9F;
   margin-bottom: 48px;
 }
-@media (max-width: 1599px) {
+@media (max-width: 1139px) {
   .featured__items-text {
     margin-bottom: 74px;
   }
@@ -479,7 +483,7 @@ table {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-@media (max-width: 1599px) {
+@media (max-width: 1139px) {
   .featured__items-list {
     box-sizing: border-box;
     display: flex;
@@ -487,7 +491,7 @@ table {
     justify-content: space-between;
   }
 }
-@media (max-width: 1084px) {
+@media (max-width: 1122px) {
   .featured__items-list {
     justify-content: space-around;
   }
@@ -638,7 +642,7 @@ table {
   box-sizing: border-box;
 }
 
-@media (max-width: 1599px) {
+@media (max-width: 1139px) {
   .info__list {
     flex-direction: column;
     align-items: center;
@@ -793,7 +797,7 @@ table {
   fill: #F16D7F;
 }
 
-@media (max-width: 1599px) {
+@media (max-width: 1139px) {
   .footer__subscribe-box {
     flex-direction: column;
     align-items: center;
