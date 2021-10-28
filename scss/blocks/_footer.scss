@@ -6,16 +6,30 @@
         height: 448px;
         background-repeat: no-repeat;
         margin: 0 auto;
+
+        @include tablet {
+            height: 614px;
+            background-size: cover;
+        }
     }
 
     &__subscribe-box {
         display: flex;
         justify-content: space-evenly;
+
+        @include tablet {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__subscribe-comment {
         text-align: center;
         padding: 86px 0 126px 0;
+
+        @include tablet {
+            padding: 53px 0 48px 0;
+        }
     }
 
     &__subscribe-text {
@@ -33,6 +47,10 @@
 
     &__subscribe-sendform {
         margin-top: 150px;
+
+        @include tablet {
+            margin: 0 0 140px 0;
+        }
     }
 
     &__subscribe-sendform-text {
@@ -71,8 +89,6 @@
         }
     }
 
-
-
     &__subscribe-btn {
         background: #E05C6E;
         color: #fff;
@@ -98,11 +114,22 @@
     &__endline {
         height: 79px;
         background-color: #222224;
+
+        @include mobile {
+            display: flex;
+            align-items: center;
+            height: 143px;
+        }
     }
 
     &__endline-box {
         display: flex;
         justify-content: space-between;
+
+        @include mobile {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
     }
 
     &__endline-list {
@@ -153,46 +180,6 @@
         &:hover {
             background: #fff;
             fill: $pink;
-        }
-    }
-}
-
-@media (max-width: $tablet-width) {
-    .footer {
-        &__subscribe-box {
-            flex-direction: column;
-            align-items: center;
-        }
-
-        &__subscribe-comment {
-            padding: 53px 0 48px 0;
-        }
-
-        .footer__subscribe-sendform {
-            margin: 0 0 140px 0;
-        }
-
-        &__subscribe {
-            height: 614px;
-            background-size: cover;
-        }
-    }
-}
-
-@media (max-width: $mobile-width) {
-    .footer {
-        &__endline-box {
-            flex-direction: column-reverse;
-            align-items: center;
-        }
-
-        &__endline {
-            height: 143px;
-        }
-
-        &__endline {
-            display: flex;
-            align-items: center;
         }
     }
 }

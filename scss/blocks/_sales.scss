@@ -28,16 +28,46 @@
     &__item-man {
         background-image: url(../img/siles_item_man.jpg);
         margin: 63px 30px 30px 0;
+
+        @include tablet {
+            margin: 19px 20px 20px 0;
+            background-position: right;
+        }
+
+        @include mobile {
+            margin: 64px 16px 32px 16px;
+            background-position: center;
+        }
     }
 
     &__item-woman {
         background-image: url(../img/siles_item_woman.jpg);
         margin: 63px 30px 30px 0;
+
+        @include tablet {
+            margin: 19px 20px 20px 0;
+            background-position: center;
+        }
+
+        @include mobile {
+            margin: 0 16px 32px 16px;
+            background-position: center;
+        }
     }
 
     &__item-kids {
         background-image: url(../img/siles_item_kids.jpg);
         margin: 63px 0 30px 0;
+
+        @include tablet {
+            margin: 19px 0 20px 0;
+            background-position: left;
+        }
+
+        @include mobile {
+            margin: 0 16px 32px 16px;
+            background-position: center;
+        }
     }
 
     &__item-accessories {
@@ -68,59 +98,5 @@
         @include font(24px, 29px, 700);
         color: $pink;
         text-transform: uppercase;
-    }
-}
-
-@media (max-width: $tablet-width) {
-    .sales {
-        // &__item-accessories {
-        //     min-height: 116px;
-        //     margin-bottom: 188px;
-        // }
-
-        &__item-man {
-            margin: 19px 20px 20px 0;
-            background-position: right;
-        }
-
-        &__item-woman {
-            margin: 19px 20px 20px 0;
-            background-position: center;
-        }
-
-        &__item-kids {
-            margin: 19px 0 20px 0;
-            background-position: left;
-        }
-    }
-}
-
-@media (max-width: $mobile-width) {
-    .sales {
-        // &__item {
-        //     width: 100%;
-        //     min-height: 247px;
-        // }
-
-        // &__item-accessories {
-        //     min-height: 111px;
-        //     margin: 0 16px 64px 16px;
-        // }
-
-        &__item-man {
-            margin: 64px 16px 32px 16px;
-            background-position: center;
-        }
-
-        &__item-kids {
-            margin: 0 16px 32px 16px;
-            background-position: center;
-        }
-
-        &__item-woman {
-            margin: 0 16px 32px 16px;
-            background-position: center;
-        }
-
     }
 }
