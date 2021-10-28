@@ -501,11 +501,6 @@ table {
   background: #F8F8F8;
   margin-bottom: 30px;
 }
-@media (max-width: 767px) {
-  .featured__items-item {
-    width: 100%;
-  }
-}
 .featured__items-img {
   margin-bottom: 24px;
 }

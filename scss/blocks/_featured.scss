@@ -39,9 +39,9 @@
         background: #F8F8F8;
         margin-bottom: 30px;
 
-        @include mobile {
-            width: 100%;
-        }
+        // @include mobile {
+        //     width: 100%;
+        // }
     }
 
     &__items-img {
