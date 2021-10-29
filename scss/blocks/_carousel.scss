@@ -1,5 +1,11 @@
-.product {
-    &__caroosel {
-        max-height: 724px;
+.product_carousel {
+
+    width: 597px;
+
+    &__img {
+        // position: absolute;
+        // top: 50%;  
+        // left: 50%;
+        // transform: translate(-50%, -50%);
     }
 }

@@ -857,8 +857,36 @@ table {
   fill: #F16D7F;
 }
 
-.product__caroosel {
-  max-height: 724px;
+.product_carousel {
+  width: 597px;
+}
+.product_path {
+  background-color: #F8F3F4;
+}
+.product_path__wrp {
+  display: flex;
+  justify-content: space-between;
+  height: 148px;
+  align-items: center;
+}
+.product_path__wrp-title {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 400;
+  font-style: normal;
+  color: #F16D7F;
+  display: block;
+}
+.product_path__wrp-path {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 300;
+  font-style: normal;
+  color: #F16D7F;
+  display: block;
+}
+.product_path__wrp-path-color {
+  color: #636363;
 }
 
 /*# sourceMappingURL=style.css.map */

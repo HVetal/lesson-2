@@ -1,0 +1,27 @@
+.product_path {
+    background-color: #F8F3F4;
+
+    &__wrp {
+        display: flex;
+        justify-content: space-between;
+        height: 148px;
+        align-items: center;
+
+    }
+
+    &__wrp-title {
+        @include font(24px, 29px, 400);
+        color: #F16D7F;
+        display: block;
+    }
+
+    &__wrp-path {
+        @include font(14px, 17px, 300);
+        color: #F16D7F;
+        display: block;
+    }
+
+    &__wrp-path-color {
+        color: #636363;
+    }
+}
