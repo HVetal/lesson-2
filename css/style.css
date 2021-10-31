@@ -1178,6 +1178,7 @@ table {
 }
 
 .product_discription__wrp {
+  width: 1141px;
   background-color: #fff;
   position: absolute;
   top: -65px;
@@ -1220,11 +1221,101 @@ table {
 }
 
 .product_discription__text {
+  width: 555px;
   font-size: 14px;
   line-height: 17px;
   font-weight: 300;
   font-style: normal;
   text-align: center;
   color: #5E5E5E;
+}
+
+.product_discription__price {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+  font-style: normal;
+  color: #F16D7F;
+  margin: 32px 0 130px 0;
+}
+
+.product_discription__dropdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.product_discription__dropdown-btn {
+  background-color: transparent;
+  color: #6F6E6E;
+  border: none;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.product_discription__dropdown-btn:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.product_discription__dropdown-btn:focus {
+  background-color: #fff;
+  outline: #6F6E6E;
+  color: #6F6E6E;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.product_discription__dropdown-btn:active {
+  background-color: #b8b6b6;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+
+.product_discription__dropdown-btn::after {
+  background-image: url(../../img/dropdown.svg);
+}
+
+.product_discription__button {
+  position: relative;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  font-style: normal;
+  color: #F16D7F;
+  padding: 14px 56px 13px 72px;
+  margin: 49px 0 65px 0;
+  border: 1px solid #F16D7F;
+  background-color: transparent;
+}
+
+.product_discription__button::before {
+  background-image: url(../../img/basket_btn_pink.svg);
+  content: '';
+  width: 26px;
+  height: 24px;
+  color: #F16D7F;
+  position: absolute;
+  left: 23px;
+  top: 14px;
+}
+
+.product_discription__button:hover {
+  background-color: #f8dcdc;
+}
+
+.product_discription__button:focus {
+  border: 1px solid #9F9F9F;
+}
+
+.product_discription__button:active {
+  background-color: #F16D7F;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
