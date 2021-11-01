@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/all.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -105,11 +106,13 @@
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
                     data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon product_carousel__arrow-prev" aria-hidden="true"><svg
+                    <span class="carousel-control-prev-icon product_carousel__arrow-prev" aria-hidden="true">
+                        <svg
                             width="13" height="23" viewBox="0 0 13 23" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M12.6998 3.7499L4.9498 11.4999L12.6998 19.2499L11.1498 22.3499L0.299805 11.4999L11.1498 0.649902L12.6998 3.7499Z" />
                         </svg></span>
+                        <!-- <i class="fas fa-arrow-circle-left product_carousel__arrow-prev"></i> -->
                     <span class="visually-hidden">Предыдущий</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
@@ -119,9 +122,11 @@
                             <path
                                 d="M0.299805 19.2499L8.0498 11.4999L0.299805 3.7499L1.8498 0.649902L12.6998 11.4999L1.8498 22.3499L0.299805 19.2499Z" />
                         </svg></span>
+                        <!-- <i class="fas fa-arrow-circle-right product_carousel__arrow-next"></i> -->
                     <span class="visually-hidden">Следующий</span>
                 </button>
             </div>
+
         </section>
         <section class="product_discription container">
             <div class="product_discription__wrp">
@@ -133,6 +138,7 @@
                     syndicate collaborative architectures before cutting-edge services. Completely visualize parallel
                     core competencies rather than exceptional portals.</p>
                 <p class="product_discription__price">$561</p>
+                <hr class="product_discription__hr">
                 <div class="product_discription__dropdown">
                     <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle product_discription__dropdown-btn"
@@ -171,7 +177,7 @@
                 <button type="button" class="product_discription__button">Add to Cart</button>
             </div>
         </section>
-        <section class="featured container">
+        <section class="featured container product_discription__featured">
             <ul class="featured__items-list">
                 <li class="featured__items-item">
                     <div class="featured__items-wrapper">
