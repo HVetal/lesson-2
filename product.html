@@ -5,22 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/all.css">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Registration</title>
+    <title>Product</title>
 </head>
 
-<body>
+<body class="page">
     <header class="header">
         <div class="container header__wrp">
             <div class="header__wrp-controls">
-                <img class="header__logo" src="img/logo.svg" alt="logo">
-                <form class="header__form" action="">
-                    <label class="search-label visually-hidden" for="seacrh">поиск
+                <a href="index.html"><img class="header__logo" src="img/logo.svg" alt="logo"></a>
+                <form class="header__form" action="#">
+                    <label class="search-label visually-hidden" for="search">поиск
                     </label>
                     <input class="header__form-search" type="search" placeholder="Search" id="search">
                 </form>
@@ -83,52 +81,142 @@
 
     <main class="product">
         <section class="product_path">
+            <h1 class="visually-hidden">NEW ARRIVALS</h1>
             <div class="product_path__wrp container">
                 <p class="product_path__wrp-title">NEW ARRIVALS</p>
-                <p class="product_path__wrp-path"><span class="product_path__wrp-path-color"> HOME / MEN /</span> NEW ARRIVALS</p>
-            </div>
+                <ul class="product_path__list">
+                    <li class="product_path__item"><a href="#">HOME&nbsp;/&nbsp;</a></li>
+                    <li class="product_path__item"><a href="#">MEN&nbsp;/&nbsp;</a></li>
+                    <li class="product_path__item product_path__item-active"><a href="#">NEW ARRIVALS</a></li>
+                </ul>
 
+            </div>
         </section>
         <section class="product_carousel">
+            <h2 class="visually-hidden">Product slider</h2>
             <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false"
                 data-bs-interval="false">
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
+                    <div class="carousel-item active product_carousel__carousel-item">
                         <img src="img/product-big.jpg" class="product_carousel__img" alt="Product">
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item product_carousel__carousel-item">
                         <img src="img/product-big.jpg" class="product_carousel__img" alt="Product">
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item product_carousel__carousel-item">
                         <img src="img/product-big.jpg" class="product_carousel__img" alt="Product">
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <button class="carousel-control-prev product_carousel__prev" type="button"
+                    data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                    <span class="product_carousel__arrow-prev" aria-hidden="true">
+                    </span>
+                    <i class="fas fa-chevron-left product_carousel__arrow-prev"></i>
                     <span class="visually-hidden">Предыдущий</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <button class="carousel-control-next product_carousel__next" type="button"
+                    data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                    <span class="product_carousel__arrow-next" aria-hidden="true">
+                    </span>
+                    <i class="fas fa-chevron-right product_carousel__arrow-next"></i>
                     <span class="visually-hidden">Следующий</span>
                 </button>
             </div>
-        </section>
-        <button type="button" class="btn btn-success">Success</button>
-        <button type="button" class="btn btn-danger">Danger</button>
 
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                Кнопка выпадающего списка
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="#">Действие</a></li>
-                <li><a class="dropdown-item" href="#">Другое действие</a></li>
-                <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+        </section>
+        <section class="product_discription container">
+            <div class="product_discription__wrp">
+                <h2 class="product_discription__title">woman collection</h2>
+                <div class="product_discription__rectangle"></div>
+                <h3 class="product_discription__name">moschino cheap and chic</h3>
+                <p class="product_discription__text">Compellingly actualize fully researched processes before roactive
+                    outsourcing. Progressively
+                    syndicate collaborative architectures before cutting-edge services. Completely visualize parallel
+                    core competencies rather than exceptional portals.</p>
+                <p class="product_discription__price">$561</p>
+                <hr class="product_discription__hr">
+                <div class="product_discription__dropdown">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle product_discription__dropdown-btn"
+                            type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            CHOOSE COLOR
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Действие</a></li>
+                            <li><a class="dropdown-item" href="#">Другое действие</a></li>
+                            <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle product_discription__dropdown-btn"
+                            type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                            CHOOSE SIZE
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Действие</a></li>
+                            <li><a class="dropdown-item" href="#">Другое действие</a></li>
+                            <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle product_discription__dropdown-btn"
+                            type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+                            QUANTITY
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Действие</a></li>
+                            <li><a class="dropdown-item" href="#">Другое действие</a></li>
+                            <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <button type="button" class="product_discription__button">Add to Cart</button>
+            </div>
+        </section>
+        <section class="featured container product_discription__featured">
+            <h2 class="visually-hidden">Fetured Items</h2>
+            <ul class="featured__items-list">
+                <li class="featured__items-item">
+                    <div class="featured__items-wrapper">
+                        <img class="featured__items-img" src="img/product_4.jpg" alt="product 1">
+                        <div class="featured__items-overlay"></div>
+                        <button type="button" class="featured__cart_button">Add to Cart</button>
+                        <h3 class="featured__items-title">ellery x m'o capsule</h3>
+                        <p class="featured__items-desc">Known for her sculptural takes on traditional tailoring,
+                            Australian
+                            arbiter of cool Kym Ellery
+                            teams up with Moda Operandi.</p>
+                        <p class="featured__items-price">$52.00</p>
+                    </div>
+                </li>
+                <li class="featured__items-item">
+                    <div class="featured__items-wrapper">
+                        <img class="featured__items-img" src="img/product_3.jpg" alt="product 1">
+                        <div class="featured__items-overlay"></div>
+                        <button type="button" class="featured__cart_button">Add to Cart</button>
+                        <h3 class="featured__items-title">ellery x m'o capsule</h3>
+                        <p class="featured__items-desc">Known for her sculptural takes on traditional tailoring,
+                            Australian
+                            arbiter of cool Kym Ellery
+                            teams up with Moda Operandi.</p>
+                        <p class="featured__items-price">$52.00</p>
+                    </div>
+                </li>
+                <li class="featured__items-item">
+                    <div class="featured__items-wrapper">
+                        <img class="featured__items-img" src="img/product_6.jpg" alt="product 1">
+                        <div class="featured__items-overlay"></div>
+                        <button type="button" class="featured__cart_button">Add to Cart</button>
+                        <h3 class="featured__items-title">ellery x m'o capsule</h3>
+                        <p class="featured__items-desc">Known for her sculptural takes on traditional tailoring,
+                            Australian
+                            arbiter of cool Kym Ellery
+                            teams up with Moda Operandi.</p>
+                        <p class="featured__items-price">$52.00</p>
+                    </div>
+                </li>
             </ul>
-        </div>
+        </section>
     </main>
     <footer class="footer">
         <h2 class="footer__header visually-hidden">Subscribe</h2>
@@ -143,7 +231,7 @@
                     <h3 class="footer__subscribe-sendform-text"><span class="footer__letter_subscribe">subscribe</span>
                         for our
                         newletter and promotion</h3>
-                    <form class="footer__subscribe-form" action="">
+                    <form class="footer__subscribe-form" action="#">
                         <label>
                             <input class="footer__subscribe-input" type="email" placeholder="Enter Your Email">
                             <span class="visually-hidden">email</span>
@@ -186,9 +274,6 @@
             </div>
         </div>
     </footer>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
-    </script> -->
     <script src="js/bootstrap.bundle.js"></script>
 </body>
 

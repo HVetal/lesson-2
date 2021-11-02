@@ -52,7 +52,7 @@ table {
 }
 
 .page {
-  font-family: "Lato";
+  font-family: "Lato", "Arial", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
@@ -75,6 +75,10 @@ table {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
+}
+
+.product {
+  margin-bottom: 98px;
 }
 
 @media (max-width: 1139px) {
@@ -258,6 +262,7 @@ table {
   background-color: #F1E4E6;
   box-sizing: border-box;
   width: 50%;
+  flex-grow: 1;
   padding: 0 0 0 92px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -626,6 +631,28 @@ table {
   display: flex;
   justify-content: center;
 }
+.featured__items-wrp-btn {
+  color: #F16D7F;
+  border: 1px solid #F16D7F;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  font-style: normal;
+  padding: 14px 38px;
+  margin: 18px 0 95px 0;
+  background-color: #fff;
+  text-decoration: none;
+}
+.featured__items-wrp-btn:hover {
+  background-color: #F16D7F;
+  color: #fff;
+}
+.featured__items-wrp-btn:active {
+  opacity: 0.5;
+}
+.featured__items-wrp-btn:focus {
+  background-color: #F1E4E6;
+}
 
 .info {
   background: #222224;
@@ -858,8 +885,57 @@ table {
 }
 
 .product_carousel {
-  width: 597px;
+  background: #F7F7F7;
+  max-width: 1600px;
+  min-height: 777px;
+  margin: 0 auto;
+  border: 1px solid #EAEAEA;
 }
+.product_carousel__carousel-item {
+  left: 30%;
+}
+.product_carousel__arrow-next {
+  font-size: 30px;
+  color: #222222;
+}
+.product_carousel__arrow-next::before {
+  background-color: #ccc;
+  padding: 10px 15px;
+}
+.product_carousel__arrow-next:hover {
+  color: #F16D7F;
+}
+.product_carousel__arrow-next:focus {
+  color: #F1E4E6;
+}
+.product_carousel__arrow-next:active {
+  color: #9F9F9F;
+}
+.product_carousel__arrow-prev {
+  font-size: 30px;
+  color: #222222;
+  width: 0px;
+}
+.product_carousel__arrow-prev::before {
+  background-color: #ccc;
+  padding: 10px 15px;
+}
+.product_carousel__arrow-prev:hover {
+  color: #F16D7F;
+}
+.product_carousel__arrow-prev:focus {
+  color: #F1E4E6;
+}
+.product_carousel__arrow-prev:active {
+  color: #9F9F9F;
+}
+.product_carousel__prev {
+  justify-content: start;
+}
+.product_carousel__next {
+  justify-content: end;
+}
+
 .product_path {
   background-color: #F8F3F4;
 }
@@ -877,16 +953,179 @@ table {
   color: #F16D7F;
   display: block;
 }
-.product_path__wrp-path {
+.product_path__list {
+  display: flex;
+  justify-content: end;
+  list-style: none;
+}
+.product_path__item a {
+  text-decoration: none;
+  color: #636363;
   font-size: 14px;
   line-height: 17px;
   font-weight: 300;
   font-style: normal;
-  color: #F16D7F;
-  display: block;
 }
-.product_path__wrp-path-color {
-  color: #636363;
+.product_path__item-active a {
+  color: #F16D7F;
+}
+
+.product_discription {
+  height: 601px;
+  position: relative;
+}
+.product_discription__wrp {
+  width: 1141px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #EAEAEA;
+  position: absolute;
+  top: -65px;
+}
+.product_discription__title {
+  color: #F16D7F;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 300;
+  font-style: normal;
+  text-transform: uppercase;
+  margin: 65px 0 12px 0;
+}
+.product_discription__rectangle {
+  background-color: #F16D7F;
+  width: 63px;
+  height: 3px;
+}
+.product_discription__name {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 300;
+  font-style: normal;
+  color: #222222;
+  text-transform: uppercase;
+  margin: 12px 0 48px 0;
+}
+.product_discription__text {
+  width: 555px;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+  color: #5E5E5E;
+}
+.product_discription__price {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+  font-style: normal;
+  color: #F16D7F;
+  margin: 32px 0 65px 0;
+}
+.product_discription__hr {
+  width: 641px;
+  border: 1px solid #EAEAEA;
+  margin-bottom: 65px;
+}
+.product_discription__dropdown {
+  display: flex;
+  justify-content: center;
+}
+.product_discription__dropdown-btn {
+  background-color: transparent;
+  color: #6F6E6E;
+  border: none;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  font-style: normal;
+}
+.product_discription__dropdown-btn:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.product_discription__dropdown-btn:focus {
+  background-color: #fff;
+  outline: #6F6E6E;
+  color: #6F6E6E;
+  border: none;
+  box-shadow: none;
+}
+.product_discription__dropdown-btn:active {
+  background-color: #b8b6b6;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+.product_discription__dropdown-btn::after {
+  background-image: url(../../img/dropdown.svg);
+}
+.product_discription__button {
+  position: relative;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  font-style: normal;
+  color: #F16D7F;
+  padding: 14px 56px 13px 72px;
+  margin: 49px 0 65px 0;
+  border: 1px solid #F16D7F;
+  background-color: transparent;
+}
+.product_discription__button::before {
+  background-image: url(../../img/basket_btn_pink.svg);
+  content: "";
+  width: 26px;
+  height: 24px;
+  color: #F16D7F;
+  position: absolute;
+  left: 23px;
+  top: 14px;
+}
+.product_discription__button:hover {
+  background-color: #f8dcdc;
+}
+.product_discription__button:focus {
+  border: 1px solid #9F9F9F;
+}
+.product_discription__button:active {
+  background-color: #F16D7F;
+  color: #fff;
+}
+.product_discription__featured {
+  margin-top: 128px;
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/lato-light.woff2") format("woff2"), url("../fonts/lato-light.woff") format("woff");
+}
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/lato-regular.woff2") format("woff2"), url("../fonts/lato-regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Lato";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/lato-italic.woff2") format("woff2"), url("../fonts/lato-italic.woff") format("woff");
+}
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/lato-bold.woff2") format("woff2"), url("../fonts/lato-bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/lato-black.woff2") format("woff2"), url("../fonts/lato-black.woff") format("woff");
 }
 
 /*# sourceMappingURL=style.css.map */
