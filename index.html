@@ -5,9 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Shop</title>
@@ -18,8 +15,8 @@
         <div class="container header__wrp">
             <div class="header__wrp-controls">
                 <img class="header__logo" src="img/logo.svg" alt="logo">
-                <form class="header__form" action="">
-                    <label class="search-label visually-hidden" for="seacrh">поиск
+                <form class="header__form" action="#">
+                    <label class="search-label visually-hidden" for="search">поиск
                     </label>
                     <input class="header__form-search" type="search" placeholder="Search" id="search">
                 </form>
@@ -196,8 +193,7 @@
                 </li>
             </ul>
             <div class="featured__items-wrp">
-                <a href="product.html">
-                    <button class="featured__items-btn" type="button">Browse All Product</button></a>
+                <a class="featured__items-wrp-btn" href="product.html">Browse All Product</a>
             </div>
         </section>
         <section class="info">
@@ -240,7 +236,7 @@
                     <h3 class="footer__subscribe-sendform-text"><span class="footer__letter_subscribe">subscribe</span>
                         for our
                         newletter and promotion</h3>
-                    <form class="footer__subscribe-form" action="">
+                    <form class="footer__subscribe-form" action="#">
                         <label>
                             <input class="footer__subscribe-input" type="email" placeholder="Enter Your Email">
                             <span class="visually-hidden">email</span>
@@ -260,7 +256,7 @@
                                 <path
                                     d="M8.08836 8.28L8.50686 5.61602H5.89022V3.88729C5.89022 3.15847 6.25574 2.44806 7.42765 2.44806H8.61722V0.179975C8.61722 0.179975 7.53772 0 6.50561 0C4.35073 0 2.9422 1.27593 2.9422 3.5857V5.61602H0.546875V8.28H2.9422V14.72H5.89022V8.28H8.08836Z" />
                             </svg></a></li>
-                    <li class="footer__endline-item footer__insta_img"><a href="#">
+                    <li class="footer__endline-item  footer__insta_img"><a href="#">
                             <svg class="footer__endline-item-img footer__insta_img" width="16" height="15"
                                 viewBox="0 0 16 15" xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -284,7 +280,6 @@
         </div>
     </footer>
     <script src="js/script.js"></script>
-    </script>
 </body>
 
 </html>

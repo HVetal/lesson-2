@@ -7,21 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/all.css">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Product</title>
 </head>
 
-<body>
+<body class="page">
     <header class="header">
         <div class="container header__wrp">
             <div class="header__wrp-controls">
                 <a href="index.html"><img class="header__logo" src="img/logo.svg" alt="logo"></a>
-                <form class="header__form" action="">
-                    <label class="search-label visually-hidden" for="seacrh">поиск
+                <form class="header__form" action="#">
+                    <label class="search-label visually-hidden" for="search">поиск
                     </label>
                     <input class="header__form-search" type="search" placeholder="Search" id="search">
                 </form>
@@ -84,13 +81,19 @@
 
     <main class="product">
         <section class="product_path">
+            <h1 class="visually-hidden">NEW ARRIVALS</h1>
             <div class="product_path__wrp container">
                 <p class="product_path__wrp-title">NEW ARRIVALS</p>
-                <p class="product_path__wrp-path"><span class="product_path__wrp-path-color"> HOME / MEN /</span> NEW
-                    ARRIVALS</p>
+                <ul class="product_path__list">
+                    <li class="product_path__item"><a href="#">HOME&nbsp;/&nbsp;</a></li>
+                    <li class="product_path__item"><a href="#">MEN&nbsp;/&nbsp;</a></li>
+                    <li class="product_path__item product_path__item-active"><a href="#">NEW ARRIVALS</a></li>
+                </ul>
+
             </div>
         </section>
         <section class="product_carousel">
+            <h2 class="visually-hidden">Product slider</h2>
             <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false"
                 data-bs-interval="false">
                 <div class="carousel-inner">
@@ -104,25 +107,18 @@
                         <img src="img/product-big.jpg" class="product_carousel__img" alt="Product">
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon product_carousel__arrow-prev" aria-hidden="true">
-                        <svg
-                            width="13" height="23" viewBox="0 0 13 23" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12.6998 3.7499L4.9498 11.4999L12.6998 19.2499L11.1498 22.3499L0.299805 11.4999L11.1498 0.649902L12.6998 3.7499Z" />
-                        </svg></span>
-                        <!-- <i class="fas fa-arrow-circle-left product_carousel__arrow-prev"></i> -->
+                <button class="carousel-control-prev product_carousel__prev" type="button"
+                    data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                    <span class="product_carousel__arrow-prev" aria-hidden="true">
+                    </span>
+                    <i class="fas fa-chevron-left product_carousel__arrow-prev"></i>
                     <span class="visually-hidden">Предыдущий</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon product_carousel__arrow-next" aria-hidden="true"><svg
-                            width="13" height="23" viewBox="0 0 13 23" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M0.299805 19.2499L8.0498 11.4999L0.299805 3.7499L1.8498 0.649902L12.6998 11.4999L1.8498 22.3499L0.299805 19.2499Z" />
-                        </svg></span>
-                        <!-- <i class="fas fa-arrow-circle-right product_carousel__arrow-next"></i> -->
+                <button class="carousel-control-next product_carousel__next" type="button"
+                    data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                    <span class="product_carousel__arrow-next" aria-hidden="true">
+                    </span>
+                    <i class="fas fa-chevron-right product_carousel__arrow-next"></i>
                     <span class="visually-hidden">Следующий</span>
                 </button>
             </div>
@@ -130,9 +126,9 @@
         </section>
         <section class="product_discription container">
             <div class="product_discription__wrp">
-                <p class="product_discription__title">woman collection</p>
+                <h2 class="product_discription__title">woman collection</h2>
                 <div class="product_discription__rectangle"></div>
-                <p class="product_discription__name">moschino cheap and chic</p>
+                <h3 class="product_discription__name">moschino cheap and chic</h3>
                 <p class="product_discription__text">Compellingly actualize fully researched processes before roactive
                     outsourcing. Progressively
                     syndicate collaborative architectures before cutting-edge services. Completely visualize parallel
@@ -153,7 +149,7 @@
                     </div>
                     <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle product_discription__dropdown-btn"
-                            type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
                             CHOOSE SIZE
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -164,7 +160,7 @@
                     </div>
                     <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle product_discription__dropdown-btn"
-                            type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
                             QUANTITY
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -178,6 +174,7 @@
             </div>
         </section>
         <section class="featured container product_discription__featured">
+            <h2 class="visually-hidden">Fetured Items</h2>
             <ul class="featured__items-list">
                 <li class="featured__items-item">
                     <div class="featured__items-wrapper">
@@ -234,7 +231,7 @@
                     <h3 class="footer__subscribe-sendform-text"><span class="footer__letter_subscribe">subscribe</span>
                         for our
                         newletter and promotion</h3>
-                    <form class="footer__subscribe-form" action="">
+                    <form class="footer__subscribe-form" action="#">
                         <label>
                             <input class="footer__subscribe-input" type="email" placeholder="Enter Your Email">
                             <span class="visually-hidden">email</span>
@@ -277,9 +274,6 @@
             </div>
         </div>
     </footer>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
-    </script> -->
     <script src="js/bootstrap.bundle.js"></script>
 </body>
 

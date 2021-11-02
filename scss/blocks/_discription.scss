@@ -1,17 +1,16 @@
 .product_discription {
-    position: relative;
     height: 601px;
+    position: relative;
 
     &__wrp {
         width: 1141px;
-        // height: 601px;
         background-color: #fff;
-        position: absolute;
-        top: -65px;
         display: flex;
         flex-direction: column;
         align-items: center;
         border: 1px solid #EAEAEA;
+        position: absolute;
+        top: -65px;
     }
 
     &__title {
@@ -86,8 +85,6 @@
         &::after {
             background-image: url(../../img/dropdown.svg);
         }
-
-
     }
 
     &__button {
